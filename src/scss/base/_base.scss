@@ -10,6 +10,11 @@ html { font-family: 'Inter', sans-serif; }
   html { font-family: 'Inter var', sans-serif; }
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .container{
   max-width: 1200px;
   width: 85%;
@@ -21,26 +26,8 @@ html { font-family: 'Inter', sans-serif; }
 
 }
 
-.cards{
+.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 1em; 
-}
-
-.card{
-  display: grid;
-  grid-template-rows: 150px auto;
-  max-width: 250px;
-
-  &__header{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  &__description{
-    padding: 1em;
-  }
-
-  background: gray;
 }

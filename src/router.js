@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import AboutImage from './views/AboutImage.vue'
 
 Vue.use(Router)
 

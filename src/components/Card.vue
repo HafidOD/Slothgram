@@ -1,36 +1,40 @@
 <template>
-    <div class="container">
-        <div class="cards">
-            <div class="card">
-            <img src="https://source.unsplash.com/random/400x400" class="card__header" alt="">
-            <article class="card__description">
-                <LikeButton title="Likes" v-bind:likeUser="5"/>
-                <LikeButton title="Dislikes" v-bind:likeUser="0"/>
-                <p>
-                    <a href="">#HolaMundo</a>
-                </p>
-            </article>
-        </div>
-        </div>
-        
+  <div class="card">
+    <div class="card__user">
+      <img class="card__user-picture" :src="userinfo.profile_picture" :alt="userinfo.full_name">
+      <p class="card__user-name">{{ userinfo.username }}</p>
     </div>
+    <div class="card__body">
+      <img :src="image" class="card__header" alt>
+      <article class="card__description">
+        <p class="card__description-text">
+            {{ shortText(description) }}
+        </p>
+      </article>
+    </div>
+  </div>
 </template>
 
 <script>
-import LikeButton from './LikeButton';
 
 export default {
-
-    name: 'Card',
-    components: {
-        LikeButton
+  name: "Card",
+  props: {
+    userinfo: Object,
+    image: String,
+    description: {
+      type: String,
+      default: "asdfgh"
     },
-    data: function(){
-        return {
-        }
-    },
-    methods: {
-
-    }
-}
+    likes: Number
+  },
+  data: function() {
+    return {};
+  },
+  methods: {
+      shortText(text) {
+          return text.substring(0,32);
+      }
+  }
+};
 </script>
