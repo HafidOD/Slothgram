@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+
+/* Hellpers for hacks with SASS 
+   if you modify these variables of sass please modify 
+   the vars of the root and in a contrary way
+*/
+
+
+    $neutral-color      : #e9ecef;
+    $first-color        : #67b92c;
+    $first-color-alt    : #489610;
+    $second-color       : #00789d;
+    $second-color-alt   : #004f67;
+    $third-color        : #9d0000;
+    $third-color-alt    : #5e0000;
+    $accent-color       : #67b92c;
+    $dark-color         : #333333;
+    $gray-color         : #a9a9a9;
+
+    $dark               : #000;
+    $white              : #FFF;
+
+    $danger            : #e91b2f;
+    $succes            : #32d296;
+
+
+:root {
+    /*
+        Colors
+        if you modify these variables of sass please modify 
+        the vars of the root and in a contrary way
+    */
+
+    --neutral-color     : #e9ecef;
+    --first-color       : #67b92c;
+    --first-color-alt   : #489610;
+    --second-color      : #00789d;
+    --second-color-alt  : #004f67;
+    --third-color       : #9d0000;
+    --third-color-alt   : #5e0000;
+    --accent-color      : #67b92c;
+    --dark-color        : #333333;      
+    --gray-color        : #a9a9a9;
+    --gray-color-2      : #f8f8f8;
+
+    --text-color        : #a9a9a9;
+
+    --border-color      : var(--gray-color);
+
+    --dark              : #000;
+    --white             : #FFF;
+
+    --danger            : #e91b2f;
+    --succes            : #32d296;
+
+
+
+    /*
+        Typography
+    */
+
+    --font-family       : 'Roboto Condensed', sans-serif;
+    --line-height       : 1.6;
+
+
+    --font-size         : 16px;
+    --font-size-xs      : 10px;
+    --font-size-sm      : .8em;
+    --font-size-m       : calc(var(--font-size) + 2);
+    --font-size-l       : calc(var(--font-size-m) + 2);
+
+    --font-size-md     : 2.2em;
+    --font-size-lg     : 3.2em;
+
+    --font-style-light  : 100;
+    --font-style-regular: normal;
+    --font-style-semibold: 400;
+    --font-style-bold    : 700;
+
+    /*
+        Layers
+    */
+
+    --z-back            : -1;
+    --z-normal          : 1;
+    --z-subnormal       : 2;
+    --z-tooltip         : 10;
+    --z-fixed           : 100;
+    --z-modal           : 1000; 
+
+    /*
+        Sizing
+    */
+
+    --padding-none      : 0;
+    --margin-none       : 0;
+
+    --padding           : 1rem;
+    --margin            : 1rem;
+
+    --padding-xs        : calc(var(--padding) / 2);
+    --margin-xs         : calc(var(--margin) / 2);
+
+    --padding-m         : calc(var(--padding) * 2);
+    --margin-m          : calc(var(--margin) * 2);
+
+    --padding-l         : calc(var(--padding) * 3);
+    --margin-l          : calc(var(--margin) * 3);
+
+    --padding-em        : 1em;
+    --margin-em         : 1em;
+
+    --padding-em-m      : calc(var(--padding-em) * 2);
+    --margin-em-m       : calc(var(--margin-em) * 2);
+
+    --padding-em-l      : calc(var(--padding-em) * 3);
+    --margin-em-l       : calc(var(--margin-em) * 3);
+
+
+    /*
+       Miscelaneous
+    */
+
+    --border-radius     : .15rem;
+    --border-radius-m   : calc(var(--border-radius) + 1.1);
+    --border-radius-l   : calc(var(--border-radius-m) + 1.1);
+
+    --all-transition    : all .2s ease-in-out;
+    --hover-transition  : all 150ms ease;
+    --input-transition  : .2s ease-in-out;
+    --header-height     : 15vh;
+
+
+    --simple-box-shadow : 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    /*
+        Breakpoints
+    */
+
+    --breakpoint-xs     : 0;
+    --breakpoint-sm     : 576px;
+    --breakpoint-md     : 768px;
+    --breakpoint-lg     : 992px;
+    --breakpoint-xl     : 1200px;
+}
+
+
+    /*
+        Breakpoints
+    */
+
+    $breakpoint-xs     : 0;
+    $breakpoint-sm     : 767px;
+    $breakpoint-md     : 768px;
+    $breakpoint-lg     : 992px;
+    $breakpoint-xl     : 1024px;

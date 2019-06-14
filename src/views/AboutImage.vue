@@ -1,5 +1,7 @@
 <template>
-    <HelloWorld :msg="message"/>
+<main>
+  
+</main>
 </template>
 
 <script>

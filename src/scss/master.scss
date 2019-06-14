@@ -1,5 +1,11 @@
 @import "base/base";
 
+@import "config/variables";
+@import "config/functions";
+
+@import "layout/containers";
+@import "layout/layout";
+
 @import "components/navbar";
 @import "components/notification";
 @import "components/logoApp";

@@ -7,6 +7,8 @@
 
 <script>
 import Gallery from './Gallery.vue'
+
+
 export default {
   name: 'HelloWorld',
   components: {

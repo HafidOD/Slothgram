@@ -13,7 +13,7 @@
 
 <script>
 import Card from './Card.vue';
-const TOKEN = '8519325858.e0be7dc.a31555cfa4924b96acd5bb89661edba4';
+const TOKEN = '8519325858.e0be7dc.83fcc4fc7c404659af8bf0b9eff2ebbf';
 
 export default {
   name: "Gallery",
