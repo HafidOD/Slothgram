@@ -8,7 +8,7 @@
       <img :src="image" class="card__header" alt>
       <article class="card__description">
         <p class="card__description-text">
-            {{ shortText(description) }}
+            {{ description | readMore(30, '...') }}
         </p>
       </article>
     </div>
@@ -30,11 +30,6 @@ export default {
   },
   data: function() {
     return {};
-  },
-  methods: {
-      shortText(text) {
-          return text.substring(0,32);
-      }
   }
 };
 </script>

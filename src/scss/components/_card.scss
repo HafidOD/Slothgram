@@ -1,0 +1,35 @@
+.cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 300px;
+}
+
+.card {
+	&__user {
+		display: flex;
+		align-items: center;
+		padding: 1rem 0;
+		&-picture {
+			margin-right: .15rem;
+			width: 40px;
+			height: 40px;
+			border-radius: 100%;
+		}
+	}
+
+	&__body {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr .8fr;
+		height: 100%;
+	}
+
+	&__header {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__description {
+    }
+}
