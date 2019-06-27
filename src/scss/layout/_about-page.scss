@@ -1,0 +1,15 @@
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: white;
+    border: 1px solid #e6e6e6;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.about-image {
+    &__description{
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+}

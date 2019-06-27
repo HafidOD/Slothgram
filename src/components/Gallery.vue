@@ -3,6 +3,7 @@
     <Card
       v-for="(item, key) in items"
       :key="key"
+      :id="item.id"
       :userinfo="item.user"
       :image="item.images.low_resolution.url"
       :description="(item.caption) ? item.caption.text : ''"
@@ -13,7 +14,7 @@
 
 <script>
 import Card from './Card.vue';
-const TOKEN = '8519325858.e0be7dc.83fcc4fc7c404659af8bf0b9eff2ebbf';
+const TOKEN = process.env.VUE_APP_TOKEN;
 
 export default {
   name: "Gallery",

@@ -1,25 +1,37 @@
 <template>
-  <div class="card">
-    <div class="card__user">
-      <img class="card__user-picture" :src="userinfo.profile_picture" :alt="userinfo.full_name">
-      <p class="card__user-name">{{ userinfo.username }}</p>
-    </div>
+  <router-link :to="`/p/${id}`">
+      <div class="card">
+    <!-- CARD USER PROFILE -->
+    <UserNameInfo 
+      :photo="userinfo.profile_picture" 
+      :username="userinfo.username"
+    />
     <div class="card__body">
-      <img :src="image" class="card__header" alt>
+      <div class="card__image-with-likes" :data-count-likes="likes">
+        <img :src="image" class="card__header" alt>
+      </div>
       <article class="card__description">
-        <p class="card__description-text">
-            {{ description | readMore(30, '...') }}
+        <p 
+          v-html="viewHashtag(description)"
+          class="card__description-text">
         </p>
       </article>
     </div>
   </div>
+  </router-link>
 </template>
 
 <script>
+import viewHashtag from '../helpers/viewHashtag';
+import UserNameInfo from './UserNameInfo';
 
 export default {
   name: "Card",
+  components:{
+    UserNameInfo
+  },
   props: {
+    id: String,
     userinfo: Object,
     image: String,
     description: {
@@ -30,6 +42,9 @@ export default {
   },
   data: function() {
     return {};
+  },
+  methods: {
+    viewHashtag
   }
 };
 </script>
